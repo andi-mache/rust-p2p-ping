@@ -1,0 +1,10 @@
+[package]
+name = "libp2p-ping-tut"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = "0.3.30"
+libp2p = { version = "0.53.2", features = ["tcp", "tls", "dns", "tokio", "noise", "yamux", "websocket", "ping", "macros"]}
+tokio = { version = "1.39.2", features = ["full"] }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
